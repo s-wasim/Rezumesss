@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Rezumesss-Login</title>
-        <link rel="stylesheet" href="styles/Login.css">
+	    <link type="text/css" rel="stylesheet" href="styles/Login.css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="scripts/login.js"></script>
-    </head>
+        <title>RESUMEZZZ-Login</title>
+	</head>
+    
     <body>
-        <div class="form-container">
-            <form action="submit"> <!--Add script here to send and validate UN/PW-->
-                <span id="errUN" class="Prompt">Username does not exist</span>
-                <span id="errPW" class="Prompt">Password is Invalid</span>
-
-                <div class="login-pannel">
-                    <label for="unTxt">Username </label><input id="unTxt" type="Text"/><br>
-                    <label class="Pw" for="pwTxt">Password</label>
-                    <input class="Pw" id="pwTxt" type="password"/><br>
-                    <input id="loginBtn" type="submit" value="Login" />
+        <form class="base">
+            <a id="title-page" href="main.html">RESUMEZZZ</a>
+            <div id="page-info">Sign in to continue to your account</div>
+            <div id="form-login">
+                <div id="form-img">
+                    <img src="images/usr-icon.png" id="usr-img"/>
                 </div>
-            </form>
-        </div>
-    </body>
+                <div id="invalid-mssg">invalid username or password</div>
+                <div id="mailbox">
+                    <input placeholder="Enter your Email" type="mail" id="email-txt"/>
+                    <input placeholder="Enter your Password" type="password" id="password-txt"/>
+                </div>
+                <div><input type="submit" id="login-check" value="LOGIN!" /></div>
+            </div>
+            <div id="create-account"> <a href="#">Create account</a></div>
+        </form>
+	</body>
+	
 </html>

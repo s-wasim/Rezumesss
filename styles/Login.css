@@ -1,10 +1,77 @@
-form {
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 10% 40% 10%;
-};
+html {
+    font-family: Garamond;
+    user-select: none;
+}
 
-.login-pannel{
-    align-items: center;
+a {
+    text-decoration: none;
+    color:#36454f
+}
+
+body{
+	background: #36454f;
+	height:80%;
+	margin:0px;
+	padding:0px;
+    text-align: center;
+}
+
+.base {
+    background-color: white;
+    padding: 10% 2% 10%;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 10px 10px;
+}
+
+#title-page {
+    font-size: 5vw;
+}
+#page-info {
+    font-size: 2vw;
+}
+
+#usr-img {
+    max-width: 10%;
+    max-height: 10%;
+}
+
+#mailbox {
+    padding: 5% 10% 2%;
+}
+
+#email-txt {
+    font-size: 1.5vw;
+    margin: 0% 0% 2%;
+}
+#password-txt {
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+#login-check {
+    width: 48%;
+    font-size: 1vw;
+    border: none;
+    background-color: #36454f;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white
+}
+#login-check:hover {
+    width: 48%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1vw;
+    border: none;
+    background-color: #7a7a7a;
+    color: black
 }
