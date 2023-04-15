@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Rezumesss-Login</title>
+        <link rel="stylesheet" href="styles/Login.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="scripts/login.js"></script>
+    </head>
     <body>
-        <form action="submit">
-            <span id="invalidCred">Username does not exist or is Invalid!</span>
-            <span id="invalidPW">Password is Invalid!</span>
-            <div>
-                Username <input type="text" id="unTxt" hidden="False"/><br>
-                Password <input type="text" id="pwTxt" hidden="True"/>
-            </div>
-        </form>
+        <div class="form-container">
+            <form action="submit"> <!--Add script here to send and validate UN/PW-->
+                <span id="errUN" class="Prompt">Username does not exist</span>
+                <span id="errPW" class="Prompt">Password is Invalid</span>
+
+                <div class="login-pannel">
+                    <label for="unTxt">Username </label><input id="unTxt" type="Text"/><br>
+                    <label class="Pw" for="pwTxt">Password</label>
+                    <input class="Pw" id="pwTxt" type="password"/><br>
+                    <input id="loginBtn" type="submit" value="Login" />
+                </div>
+            </form>
+        </div>
     </body>
 </html>

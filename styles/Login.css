@@ -1,0 +1,10 @@
+form {
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10% 40% 10%;
+};
+
+.login-pannel{
+    align-items: center;
+}
